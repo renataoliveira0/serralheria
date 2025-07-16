@@ -34,8 +34,19 @@
 
 
 
-ul.servico-list li {
-   list-style: none;
+/* Garante que a UL dos serviços não tenha espaçamento e fique centralizada */
+main > ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  max-width: 100%;
+  display: block;
+}
+
+main > ul li.servico-item {
+  margin: 10px auto;
+  text-align: center;
 }
 
 
@@ -86,12 +97,16 @@ img {
   font-size: 25px;
 }
 
+
+
+
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   .intro {
     background-size: cover;
     height: 400px;
     padding: 20px;
+    text-align: center;
   }
 
   .intro h1 {
@@ -111,22 +126,25 @@ img {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    align-items: center;
   }
 
   .servico {
-    margin: 20px 0;
-    max-width: 100%;
+    margin: 10px 0;
+    max-width: 90%;
     font-size: 20px;
   }
 
   .servico-descricao {
     font-size: 16px;
+    margin: 10px 0;
   }
 
-  img {
+  .servico-item img {
     max-width: 90%;
     height: auto;
     margin: 0 auto;
+    display: block;
   }
 
   .contato {
@@ -136,6 +154,7 @@ img {
 
   .contato h1 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .contato p {
@@ -146,15 +165,19 @@ img {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    align-items: center;
   }
 
   .contatoElementos article {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin: 5px 0;
     font-size: 14px;
+    text-align: center;
   }
+  
 }
+
 
 @media (max-width: 576px) {
   .intro {
