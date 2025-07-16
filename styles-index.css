@@ -1,0 +1,258 @@
+/* Responsividade do conteúdo principal */
+.intro {
+    background-image: url(./img/grades/grade1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.intro h1 {
+    font-size: 50px; /* Tamanho do texto h1 */
+    color: #fff;
+}
+
+.intro p {
+    color: #fff;
+    margin-top: 10px; /* Espaçamento opcional entre h1 e p */
+    font-size: 25px;
+}
+
+
+
+.sessaoIndex h2 {
+    margin: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+ul.servico-list li {
+   list-style: none;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.servico-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+}
+
+strong {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.servico {
+  margin: 30px;
+  max-width: 400px;
+  
+  font-size: 35px;
+  margin-right: 250px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.servico-descricao {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .servico-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .servico {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries para responsividade */
+ @media (max-width: 1200px) {
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    .sessaoIndex h2 {
+        font-size: 30px;
+    }
+
+    .contato h1 {
+        font-size: 28px;
+    }
+
+    .contato p {
+        font-size: 18px;
+    }
+} 
+
+ @media (max-width: 992px) {
+    
+
+    .contatoElementos {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contatoElementos article {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .sessaoIndex h2 {
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    .servico-descricao {
+        width: 100%;
+        font-size: 20px;
+    } 
+
+} 
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .contato h1 {
+        font-size: 24px;
+    }
+
+    .contato p {
+        font-size: 16px;
+    }
+
+    .servico {
+        margin: 50px 20px;
+    }
+
+    .servico-descricao {
+        font-size: 18px;
+    }
+
+    .intro {
+        background-size: contain;
+        height: 400px; /* Ajuste a altura conforme necessário */
+    }
+}
+
+@media (max-width: 576px) {
+    .linhaTopo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .intro {
+        height: auto;
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .sessaoIndex h2 {
+        font-size: 20px;
+    }
+
+    .contato h1 {
+        font-size: 20px;
+    }
+
+    .contato p {
+        font-size: 14px;
+    }
+
+    .contatoElementos {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contatoElementos article {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+
+
+    .servico {
+        margin: 20px;
+    }
+
+    .servico-descricao {
+        font-size: 16px;
+        width: 100%;
+    }
+    .intro {
+        background-size: contain;
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }
+}
