@@ -73,7 +73,7 @@ img {
   margin: 30px;
   max-width: 400px;
   
-  font-size: 35px;
+  font-size: 30px;
   margin-right: 250px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -88,17 +88,105 @@ img {
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
-  .servico-item {
-    flex-direction: column;
-    gap: 10px;
+  .intro {
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
   }
 
-  img {
-    max-width: 100%;
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  .sessaoIndex h2 {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .servico-item {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 
   .servico {
+    margin: 20px 0;
     max-width: 100%;
+    font-size: 20px;
+  }
+
+  .servico-descricao {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contato {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .contato h1 {
+    font-size: 24px;
+  }
+
+  .contato p {
+    font-size: 16px;
+  }
+
+  .contatoElementos {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .contatoElementos article {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    height: auto;
+  }
+
+  .intro h1 {
+    font-size: 24px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .servico {
+    font-size: 18px;
+  }
+
+  .servico-descricao {
+    font-size: 14px;
+  }
+
+  .contato h1 {
+    font-size: 20px;
+  }
+
+  .contato p {
+    font-size: 14px;
+  }
+
+  .contatoElementos article {
+    font-size: 13px;
   }
 }
 
@@ -108,151 +196,3 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-/* Media Queries para responsividade */
- @media (max-width: 1200px) {
-    .intro h1 {
-        font-size: 40px;
-    }
-
-    .intro p {
-        font-size: 20px;
-    }
-
-    .sessaoIndex h2 {
-        font-size: 30px;
-    }
-
-    .contato h1 {
-        font-size: 28px;
-    }
-
-    .contato p {
-        font-size: 18px;
-    }
-} 
-
- @media (max-width: 992px) {
-    
-
-    .contatoElementos {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .contatoElementos article {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .sessaoIndex h2 {
-        margin: 20px;
-        font-size: 25px;
-    }
-
-    .servico-descricao {
-        width: 100%;
-        font-size: 20px;
-    } 
-
-} 
-
-@media (max-width: 768px) {
-    .intro h1 {
-        font-size: 30px;
-    }
-
-    .intro p {
-        font-size: 18px;
-    }
-
-    .contato h1 {
-        font-size: 24px;
-    }
-
-    .contato p {
-        font-size: 16px;
-    }
-
-    .servico {
-        margin: 50px 20px;
-    }
-
-    .servico-descricao {
-        font-size: 18px;
-    }
-
-    .intro {
-        background-size: contain;
-        height: 400px; /* Ajuste a altura conforme necessário */
-    }
-}
-
-@media (max-width: 576px) {
-    .linhaTopo {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .intro {
-        height: auto;
-        padding: 20px;
-    }
-
-    .intro h1 {
-        font-size: 24px;
-    }
-
-    .intro p {
-        font-size: 16px;
-    }
-
-    .sessaoIndex h2 {
-        font-size: 20px;
-    }
-
-    .contato h1 {
-        font-size: 20px;
-    }
-
-    .contato p {
-        font-size: 14px;
-    }
-
-    .contatoElementos {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .contatoElementos article {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-    }
-
-
-
-    .servico {
-        margin: 20px;
-    }
-
-    .servico-descricao {
-        font-size: 16px;
-        width: 100%;
-    }
-    .intro {
-        background-size: contain;
-        height: 300px; /* Ajuste a altura conforme necessário */
-    }
-}
