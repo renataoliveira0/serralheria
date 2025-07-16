@@ -102,6 +102,12 @@ img {
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
+
+  .linhaTopo {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .intro {
     background-size: cover;
     height: 400px;
@@ -109,6 +115,7 @@ img {
     text-align: center;
   }
 
+  
   .intro h1 {
     font-size: 30px;
   }
