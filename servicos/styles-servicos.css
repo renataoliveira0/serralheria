@@ -72,9 +72,9 @@
 
 
    .product-item img {
-       max-width: 330px;
+       max-width: 300px;
        /* ou o valor que você quiser */
-       max-height: 330px;
+       max-height: 300px;
        /* limite máximo */
        width: auto;
        height: auto;
